@@ -126,4 +126,11 @@ INSERT INTO Productos (nombreProducto, descripcion, precio, stock, idCategoria, 
 INSERT INTO Productos (nombreProducto, descripcion, precio, stock, idCategoria, idUsuarioRegistro) VALUES 
 ('Monitor LG 24"', 'Monitor Full HD 24" IPS, 75Hz', 149.99, 12, 3, 2);
 
+ALTER TABLE Productos
+ADD (
+    IMAGEN_URL VARCHAR2(120) NULL
+);
+
+SELECT * FROM Productos;
+
 COMMIT;
