@@ -17,7 +17,6 @@ public class CorsConfig {
         // Configuración esencial para el FrontEnd
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://localhost"); // Para desarrollo
-        config.addAllowedOrigin("http://www.vercel-learnApi.com"); // Para producción
 
         // Métodos permitidos
         config.addAllowedMethod("GET");
